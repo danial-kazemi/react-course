@@ -1,7 +1,30 @@
-const RandomUser = () => {
-    const address = 'https://randomuser.me/api/' ;
+import { useState } from 'react';
+import axios from 'axios';
+
+const RandomUser = () => {  
+    const [email, setEmail] = useState('')
+    async function getUserData() {
+         const address = 'https://randomuser.me/api/' ;
+            const {data} = await axios.get(`${address}`)            
+            return data ;    
+        }
+        getUserData()
+            .then((response)=>{
+                console.log(response);
+                // if(response.results.length > 0){
+                //     response.results.map((data)=>{
+                    
+                //     });
+            
+                // }
+            })  
+      
   return (
-    <div>RandomUser</div>
+    
+    <>
+    <div>{email}</div>
+    </>
+    
   )
 }
 

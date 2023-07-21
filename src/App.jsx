@@ -1,11 +1,12 @@
 import './App.css'
-import Counter from './components/Counter'
+
+import RandomUser from './components/RandomUser'
 
 function App() {
 
   return (
     <>
-      <Counter />
+      <RandomUser />
     </>   
     
   )
