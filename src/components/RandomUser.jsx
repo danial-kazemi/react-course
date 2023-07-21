@@ -10,13 +10,7 @@ const RandomUser = () => {
         }
         getUserData()
             .then((response)=>{
-                console.log(response);
-                // if(response.results.length > 0){
-                //     response.results.map((data)=>{
-                    
-                //     });
-            
-                // }
+                console.log(response);         
             })  
       
   return (
