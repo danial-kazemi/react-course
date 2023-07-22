@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-
 function Counter() {
+    // Define state
     let [counter, setCounter] = useState(0);
     const array1 = [5, 12, 8, 130, 44];
 
