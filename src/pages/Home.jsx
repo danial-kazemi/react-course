@@ -1,9 +1,18 @@
 import Navigation from "../components/Navigation";
+import { Stack, Button } from "react-bootstrap";
 function Home () {
     return(
       <>
-        <h2>Home</h2>
-        <Navigation/>       
+         <Navigation/> 
+        <h2>Home</h2>            
+        <Stack direction="horizontal" gap={2}>
+            <Button as="a" variant="primary">
+                Button as link
+            </Button>
+            <Button as="a" variant="success">
+                Button as link
+            </Button>
+        </Stack>;  
       </>    
     )
   }
