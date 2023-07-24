@@ -4,7 +4,7 @@ function Home () {
     return(
       <>
          <Navigation/> 
-        <h2>Home</h2>            
+        <h2>خانه</h2>            
         <Stack direction="horizontal" gap={2}>
             <Button as="a" variant="primary">
                 Button as link
