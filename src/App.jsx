@@ -1,28 +1,19 @@
 import './App.css';
 import {Routes, Route} from 'react-router-dom';
-import Home from './components/Home';
+import Home from './pages/Home';
+import About from './pages/About';
 
-function TestRouter () {
-    return(
-      <>
-        <h2>testRouter</h2>
-        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit voluptates deserunt ratione sint laborum tempore, quisquam quis quia distinctio et, corrupti, dolor commodi tenetur reprehenderit labore! Et magni quia dolore?</p>
-      </>
-    )
-}
+
 
 function App() {
-
-  return (
-    
+  return (    
     <>
       <Routes>
           <Route path="/" element={<Home/>} />
-          <Route path="/test/" element={<TestRouter />} />
+          <Route path="/About" element={<About />} />
       </Routes>  
       
-    </>   
-    
+    </>    
   )
 }
 
